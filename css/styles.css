@@ -1,1 +1,15 @@
+/* Author: Rachel Kabwiza 
+File Name: styles.css
+Date: 05/23/2025
+*/
+/* CSS Reset */
+body, header, nav, main, footer, img, h1 {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.logo {
+    height: 50px;
+    width: 50px;
+}
 
