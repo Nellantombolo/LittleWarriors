@@ -576,5 +576,46 @@ footer {
     font-size: 14px;
   }
 }
+/* Mobile Nav - Default Hidden */
+@media (max-width: 768px) {
+  .mobile-nav #menu-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f06292;
+    padding: 10px 0;
+  }
+
+  .mobile-nav a {
+    display: block;
+    margin: 10px 0;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .tab-desk {
+    display: none;
+  }
+}
+
+/* Desktop view - hide mobile nav */
+@media (min-width: 769px) {
+  .mobile-nav {
+    display: none;
+  }
+
+  .tab-desk {
+    display: block;
+  }
+}
 
 
