@@ -457,3 +457,79 @@ footer {
   margin-top: 40px;
 }
 
+/* --------------------
+   About Us Page Styles
+-------------------- */
+.mission-vision,
+.our-story,
+.our-team,
+.core-values {
+  margin-bottom: 30px;
+}
+
+/* --------------------
+   Get Involved Page Styles
+-------------------- */
+
+/* Media section */
+.media {
+  text-align: center;
+}
+
+.media img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Volunteer Grid */
+.volunteer-grid .grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.volunteer-grid .grid div {
+  background-color: #ffe6ec;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 250px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Call to Action */
+.cta ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* FAQ */
+.faq details {
+  margin-bottom: 10px;
+}
+
+.faq summary {
+  font-weight: bold;
+  cursor: pointer;
+  color: #f06292;
+}
+
+.faq p {
+  margin-left: 20px;
+  color: #555;
+}
+
+/* Reusable button class */
+.button {
+  display: inline-block;
+  background-color: #f06292;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
