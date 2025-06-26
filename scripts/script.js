@@ -11,4 +11,13 @@ function hamburger() {
 		    menu.style.display = "block";
 		}
 }
+document.addEventListener("DOMContentLoaded", function () {
+	var form = document.getElementById("donation-form");
+
+	form.addEventListener("submit", function (event) {
+		event.preventDefault();
+		alert("Thank you for your donation! Your support means a lot.");
+		form.reset();
+	});
+});
 
