@@ -1,24 +1,115 @@
 <!DOCTYPE html>
+<!--
+Student Name: Ornella Ntombolo
+File Name: programs.html
+Date: 06/25/2025
+-->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Programs | Supporting Children with Cancer</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header></header>
-  <main>
-    <section class="programs-intro">
-      <!-- Summary paragraph -->
-    </section>
-    <section class="programs-table">
-      <!-- Table with Services, Description, Duration -->
-    </section>
-    <section class="resources">
-      <!-- Resource download buttons -->
-    </section>
-  </main>
-  <footer></footer>
-</body>
-</html>
+    <head>
+        <title>Little Warriors Foundation: Programs</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    </head>
+    <body>
+        <!-- Mobile Nav -->  
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="get_involved.html">Get Involved</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+        
+
+        <nav class="tab-desk">
+            <ul>
+                <li>
+                  <a href="index.html">
+                    <img src="images/logo_little_warriors.jpg" alt="Little Warriors Logo" class="logo">
+                  </a>
+                </li>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="lessons.html">About Us</a></li>
+                <li><a href="instructors.html">Programs</a></li>
+                <li><a href="rentals.html">Get Involved</a></li>
+                <li><a href="donate.html">Donate</a></li> 
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Use the main area to add the main content to the webpage -->
+        <main>
+            <div>
+              <h2>Our Programs</h2>
+
+              <p>
+                At Little Warriors Foundation, we are committed to standing beside children with cancer and their families through every step of their journey. Our programs are carefully designed to provide emotional support, financial relief, and educational assistance. Whether it's a comforting hospital visit, a much-needed care package, or help with tutoring during treatment, our goal is to bring light and stability during a difficult time. Below is an overview of the core programs we offer and how they make an impact.
+              </p>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Program Name</th>
+                    <th>Description</th>
+                    <th>Duration</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>Hospital Visits</td>
+                    <td>Volunteers bring comfort kits, books, and companionship to kids in treatment</td>
+                    <td>Weekly</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Emergency Fund</td>
+                    <td>Helps families pay for travel, medication, or lodging during care</td>
+                    <td>Case-by-case</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Online Support Groups</td>
+                    <td>Virtual meetups for parents or kids to share and connect</td>
+                    <td>Bi-weekly</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Educational Tutoring</td>
+                    <td>Helps kids keep up with schoolwork through virtual or in-person tutoring</td>
+                    <td>As scheduled</td>
+                  </tr>
+                  
+                  <tr>
+                    <td>Care Package Delivery</td>
+                    <td>Sends personalized boxes with toys, hygiene items, and notes of encouragement</td>
+                    <td>Monthly</td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+        </main>
+        <br>
+
+        <footer>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:rkabwiza@gmail.com">support@littlewarriorsfoundation.net</a></p>
+        </footer>
+        <script src="scripts/script.js"></script>
+    </body>
+</htm>
