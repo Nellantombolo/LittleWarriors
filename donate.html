@@ -56,23 +56,42 @@ Date: 06/25/2025
             <div>
               <form id="donation-form">
                 <fieldset>
-                  <legend>Donation Info</legend>
-                  <input type="number" name="amount" placeholder="Amount" />
-                  <input type="radio" name="freq" value="once" /> One-time
-                  <input type="radio" name="freq" value="monthly" /> Monthly
-                  <select name="program">
-                    <option>Sponsor a Child</option>
-                    <option>Support a Visit</option>
-                  </select>
+                    <legend>Donation Info</legend>
+
+                    <label for="amount">Donation Amount</label>
+                    <input type="number" id= "amount" name="amount" placeholder="Amount">
+
+                    <p>Frequency:</p>
+                    <input type="radio" id="once" name="freq" value="once">
+                    <label for="once">One-time</label>
+
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" id="monthly" name="freq" value="monthly">
+
+                    <label for="program">Select a Program</label>
+                    <select name="program" id="program">
+                        <option>Sponsor a Child</option>
+                        <option>Support a Visit</option>
+                    </select>
                 </fieldset>
           
                 <fieldset>
-                  <legend>Your Info</legend>
-                  <input type="text" name="firstname" placeholder="First Name">
-                  <input type="text" name="lastname" placeholder="Last Name">
-                  <input type="email" name="email" placeholder="Email">
-                  <input type="tel" name="phone" placeholder="Phone Number">
-                  <textarea name="message" placeholder="Leave a message"></textarea>
+                    <legend>Your Informations</legend>
+                    
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+
+                    <label for="message">Leave a Message</label>
+                    <textarea id="message" name="message" placeholder="Leave a message"></textarea>
                 </fieldset>
                 
                 <button type="submit">Donate Now</button>
