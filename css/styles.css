@@ -640,11 +640,12 @@ footer {
 .aboutus-header-img {
   display: block;
   margin: 20px auto;
-  width: 80%;
-  max-width: 600px;
+  width: 60%;           /* ← change from 80% to 60% */
+  max-width: 400px;     /* ← limits how big it gets */
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 .volunteer-grid .grid img {
   object-fit: cover;
