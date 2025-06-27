@@ -18,38 +18,40 @@ Date: 06/25/2025
 
     </head>
     <body>
+        <header>
         <!-- Mobile Nav -->  
-        <nav class="mobile-nav">
-            <div id="menu-links">
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="programs.html">Programs</a>
-                <a href="get_involved.html">Get Involved</a>
-                <a href="donate.html">Donate</a>
-                <a href="contact_us.html">Contact Us</a>
-            </div>
-            <a class="menu-icon" onclick="hamburger()">
-                <div>&#9776;</div>
-            </a>
-        </nav>
-        
+            <nav class="mobile-nav">
+                <div id="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="about_us.html">About Us</a>
+                    <a href="programs.html">Programs</a>
+                    <a href="get_involved.html">Get Involved</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact_us.html">Contact Us</a>
+                </div>
+                <a class="menu-icon" onclick="hamburger()">
+                    <div>&#9776;</div>
+                </a>
+            </nav>
+            
 
-        <nav class="tab-desk">
-            <ul>
-                <li>
-                  <a href="index.html">
-                    <img src="images/logo_little_warriors.jpg" alt="Little Warriors Logo" class="logo">
-                  </a>
-                </li>
+            <nav class="tab-desk">
+                <ul>
+                    <li>
+                    <a href="index.html">
+                        <img src="images/logo_little_warriors.jpg" alt="Little Warriors Logo" class="logo">
+                    </a>
+                    </li>
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lessons.html">About Us</a></li>
-                <li><a href="instructors.html">Programs</a></li>
-                <li><a href="rentals.html">Get Involved</a></li>
-                <li><a href="donate.html">Donate</a></li> 
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lessons.html">About Us</a></li>
+                    <li><a href="instructors.html">Programs</a></li>
+                    <li><a href="rentals.html">Get Involved</a></li>
+                    <li><a href="donate.html">Donate</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
         
         <!-- Use the main area to add the main content to the webpage -->
         <main>
@@ -62,8 +64,8 @@ Date: 06/25/2025
                     <input type="number" id= "amount" name="amount" placeholder="Amount">
 
                     <p>Frequency:</p>
-                    <input type="radio" id="once" name="freq" value="once">
                     <label for="once">One-time</label>
+                    <input type="radio" id="once" name="freq" value="once">
 
                     <label for="monthly">Monthly</label>
                     <input type="radio" id="monthly" name="freq" value="monthly">
