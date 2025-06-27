@@ -1,5 +1,5 @@
 /*  
-Author: Rachel Kabwiza 
+Author: Rachel Kabwiza, Sena Corakci, Ornella Ntombolo
 File Name: styles.css
 Date: 05/23/2025
 */
@@ -36,7 +36,7 @@ img {
 
 /* Style rules for navigation area */
 nav {
-	background-color: #fff;
+	background-color: #f06292;
 }
 
 .mobile-nav a {
@@ -158,7 +158,7 @@ main p {
 /* Programs and Donate */
 /* Style rules for table elements */ 
 table {
-    border: 1px solid #ffe6ec;
+    border: 1px solid #f06292;
     border-collapse: collapse;
     margin: 0 auto;
     width: 100%;
@@ -171,11 +171,11 @@ caption {
 }
 
 th, td {
-    border: 1px solid #ffe6ec;
+    border: 1px solid #f06292;
     padding: 2%;
     }
 th {
-    background-color: #ffe6ec;
+    background-color: #f06292;
     color: #fff;
     font-size: 1.15em;
 }
@@ -229,9 +229,10 @@ fieldset {
 input, select, textarea {
 	margin-bottom: 1em;
 	margin-top: 0.5em;
+	display: inline-block;
 	width: 100%;
 	padding: 0.75em
-	border: 1px solid #ccc;
+	border 1px solid #ccc;
 	border-radius: 5px;
 	font-family: inherit;
 }
@@ -252,6 +253,8 @@ form #submit {
 	padding: 3%;
 	background-color: #ff809e;
 	font-size: 1em;
+	text-align: center;
+	border-radius: 5%;
 }
 
 /* Style rules for footer content */
@@ -287,6 +290,10 @@ footer a {
 	span.tab-desk {
 		display: inline;
 	}
+	header nav {
+		display: block;
+	}
+
 
 	/* Tablet Viewport: Style rules for nav area */
 	nav li {
@@ -341,7 +348,7 @@ footer a {
 	nav li a {
 		padding: 0.5 2.5em;
 	}
-	nav li a:hover {
+	nav li a:hover, nav li a:focus {
 		color: #373684;
 		background-color: #e5e9fc;
 	}
@@ -429,7 +436,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: #000;
   text-decoration: none;
   font-weight: bold;
 }
