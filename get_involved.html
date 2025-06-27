@@ -1,85 +1,103 @@
-<!--
-  Name: Sena Corakci
-  File: get_involved.html
-  Date: 06/26/2025
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Get Involved | Little Warriors Foundation</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Involved | Little Warriors Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Get Involved</h1>
-    <p><em>Be a part of our mission to support children with cancer</em></p>
-    <img src="images/logo_little_warriors.jpg" alt="Little Warriors Foundation Logo" width="150">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="programs.html">Programs</a></li>
-        <li><a href="donate.html">Donate</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="programs.html">Programs</a>
+            <a href="donate.html">Donate</a>
+            <a href="get_involved.html">Get Involved</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+        </a>
     </nav>
-  </header>
 
-  <main>
-    <section class="media">
-      <h2>Join the Little Warriors Movement</h2>
-      <img src="images/logo_little_warriors.jpg" alt="Little Warriors Foundation - Supporting children with cancer" width="400">
-      <p>Every image tells a story of hope. Help us change lives, one child at a time.</p>
-    </section>
+    <header class="tab-desk">
+        <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="volunteer-grid">
-      <h2>Volunteer Opportunities</h2>
-      <div class="grid">
-        <div>
-          <h3>Event Helper</h3>
-          <p>Support our fundraising events in your area.</p>
+    <main>
+        <section class="media">
+            <h2>Join the Little Warriors Movement</h2>
+            <img src="images/logo_little_warriors.jpg" alt="Little Warriors Foundation - Supporting children with cancer" width="400">
+            <p>Every image tells a story of hope. Help us change lives, one child at a time.</p>
+        </section>
+
+        <section class="volunteer-grid">
+            <h2>Volunteer Opportunities</h2>
+            <div class="grid">
+                <div>
+                    <h3>Event Helper</h3>
+                    <p>Support our fundraising events in your area.</p>
+                </div>
+                <div>
+                    <h3>Online Advocate</h3>
+                    <p>Promote our mission through social media.</p>
+                </div>
+                <div>
+                    <h3>Family Support</h3>
+                    <p>Offer emotional support and activities for kids in treatment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>How You Can Help</h2>
+            <ul>
+                <li>Volunteer your time</li>
+                <li>Organize a fundraiser</li>
+                <li>Spread the word on social media</li>
+                <li>Donate essential supplies</li>
+            </ul>
+        </section>
+
+        <section class="faq">
+            <h2>FAQ</h2>
+            <details>
+                <summary>Do I need experience to volunteer?</summary>
+                <p>No experience is necessary — we’ll guide you!</p>
+            </details>
+            <details>
+                <summary>Can I host a fundraiser in my town?</summary>
+                <p>Absolutely! Contact us and we’ll help you get started.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@littlewarriorsfoundation.net">contact@littlewarriorsfoundation.net</a></p>
         </div>
-        <div>
-          <h3>Online Advocate</h3>
-          <p>Promote our mission through social media.</p>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook_logo.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter_logo.png" alt="Twitter logo">
+            </a>
         </div>
-        <div>
-          <h3>Family Support</h3>
-          <p>Offer emotional support and activities for kids in treatment.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <h2>How You Can Help</h2>
-      <ul>
-        <li>Volunteer your time</li>
-        <li>Organize a fundraiser</li>
-        <li>Spread the word on social media</li>
-        <li>Donate essential supplies</li>
-      </ul>
-    </section>
-
-    <section class="faq">
-      <h2>FAQ</h2>
-      <details>
-        <summary>Do I need experience to volunteer?</summary>
-        <p>No experience is necessary — we’ll guide you!</p>
-      </details>
-      <details>
-        <summary>Can I host a fundraiser in my town?</summary>
-        <p>Absolutely! Contact us and we’ll help you get started.</p>
-      </details>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Little Warriors Foundation. All rights reserved.</p>
-  </footer>
-  <script src="scripts/script.js"></script>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
-
