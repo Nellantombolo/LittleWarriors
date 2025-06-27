@@ -1,33 +1,102 @@
 <!DOCTYPE html>
-<!--  
-Student Name: Rachel Kabwiza, Sena Corakci, Ornella Ntombolo
-File Name: index.html
-Date: 06/14/2025
--->
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Supporting Children with Cancer</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header>
-    <!-- Navigation with logo and links -->
-  </header>
-  <main>
-    <section class="hero">
-      <!-- Banner image + Mission Statement + CTA -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Warriors Foundation</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fonts from Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header with Logo & Nav -->
+    <nav class="mobile-nav">
+      <div id="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about_us.html">About Us</a>
+          <a href="programs.html">Programs</a>
+          <a href="donate.html">Donate</a>
+          <a href="get_involved.html">Get Involved</a>
+          <a href="contact_us.html">Contact Us</a>
+      </div>
+      <a class="nav-icon" onclick="menu()">
+          <div id="icon">&#9776;</div>
+      </a>
+    </nav>
+
+    <header>
+      <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="programs.html">Programs</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="get_involved.html">Get Involved</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Video Banner (Placeholder) -->
+  <!-- Replace your entire video/banner section with this: -->
+  
+  <main id="content">
+    <div id="info">
+        <h2>Who Are We ?</h2>
+        <p>We're a compassionate community dedicated to supporting children battling cancer and their families. Through emotional support programs, hospital partnerships, and family resources, we bring moments of joy and hope to brave young warriors during their treatment journey.</p>
+        <p>Little Warriors Foundation is a member of the <a href="https://donate.cancer.org/" target="_blank" class="link">American Cancer Society.</a></p>
+        
+        
+        <p>Watch the video below to learn about us.</p>
+        <video controls poster="images/poster_video.jpg">
+            <source src="media/home_page_video.mp4" type="video/mp4">
+            <p>Your browser does not support the audio element.</p>
+        </video>
+
+    <section class="video-hero">
+      <div class="video-content">
+        <h1>Standing Strong with Kids Fighting Cancer</h1>
+        <p>Every child deserves hope, joy, and the best chance to heal.</p>
+      </div>
+    </section>  <!-- Feature Blocks -->
+      <section class="features">
+        <div class="feature-block">
+          <div class="feature-icon">❤️</div>
+          <h3>Our Programs</h3>
+          <p>Camp Sunshine, Hospital Packs, and more. Learn how we bring joy to kids in treatment.</p>
+          <a href="index.html" class="link">Explore →</a>
+        </div>
+      
+      <div class="feature-block">
+        <div class="feature-icon">👐</div>
+        <h3>Volunteer</h3>
+        <p>Give your time and talent to brighten a child's day. No experience needed!</p>
+        <a href="get_involved.html" class="link">Join Us →</a>
+      </div>
+      
+      <div class="feature-block">
+        <div class="feature-icon">✨</div>
+        <h3>Our Story</h3>
+        <p>Read how Little Warriors helped families like Mia's through their toughest battles.</p>
+        <a href="about_us.html" class="link">Read More →</a>
+      </div>
     </section>
-    <section class="highlights">
-      <!-- Programs | Volunteer | Stories Cards -->
-    </section>
-    <section class="feature">
-      <!-- Featured Story or Event -->
-    </section>
-  </main>
-  <footer>
-    <!-- Footer with social, contact, nav -->
-  </footer>
-</body>
+    <footer>
+      <div class="copyright">
+          <p>&copy; Copyright 2021. All Rights Reserved.</p>
+          <p><a href="mailto:contact@littlewarriors.net">contact@littlewarriorsfoundation.net</a></p>
+      </div> 
+      <div class="social">
+          <a href="https://www.facebook.com" target="_blank">
+              <img src="images/facebook_logo.png" alt="Facebook logo">
+          </a>
+          <a href="https://www.twitter.com" target="_blank">
+              <img src="images/twitter_logo.png" alt="Twitter logo">
+          </a>
+      </div> 
+   </footer>
+   <script src="scripts/script.js"></script>
+  </body>
 </html>
