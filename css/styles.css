@@ -155,9 +155,10 @@ main p {
 	height: 50%;
 }
 
-/* Style rules for table elements */
+/* Author: Ornella Ntombolo */
+/* Style rules for table elements */ 
 table {
-    border: 1px solid #373684;
+    border: 1px solid #ffe6ec;
     border-collapse: collapse;
     margin: 0 auto;
     width: 100%;
@@ -170,23 +171,23 @@ caption {
 }
 
 th, td {
-    border: 1px solid #373684;
+    border: 1px solid #ffe6ec;
     padding: 2%;
     }
 th {
-    background-color: #373684;
+    background-color: #ffe6ec;
     color: #fff;
     font-size: 1.15em;
 }
 tr:nth-child(odd) {
-    background-color: #b7b7e1;
+    background-color: #feb1c4;
 }
 
 aside {
 	text-align: center;
 	font-size: 1.5em;
 	font-weight: bold;
-	color: #373684;
+	color: #ffe6ec;
 	text-shadow: 3px 3px 10px #8280cb;
 }
 
@@ -213,7 +214,7 @@ figcaption {
 
 /* Style rules for form elements */
 form {
-	background-color: #f9f9f9;
+	background-color: #ffe6ec;
 	padding: 2em;
 	border-radius: 10px;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -249,7 +250,7 @@ form #submit {
 	margin: 0 auto;
 	display: block;
 	padding: 3%;
-	background-color: #b7b7e1;
+	background-color: #ff809e;
 	font-size: 1em;
 }
 
