@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us | Supporting Children with Cancer</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Little Warriors Foundation</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header></header>
-  <main>
-    <form class="contact-form">
-      <!-- Full Name, Email, Message -->
-    </form>
-    <section class="map">
-      <!-- Embedded map or placeholder -->
-    </section>
-    <section class="quick-info">
-      <!-- Email, phone, social links -->
-    </section>
-    <section class="faq">
-      <!-- Toggle FAQ section (optional) -->
-    </section>
-  </main>
-  <footer></footer>
+    <nav class="mobile-nav">
+        <div id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="programs.html">Programs</a>
+            <a href="donate.html">Donate</a>
+            <a href="get_involved.html">Get Involved</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+        <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+        </a>
+    </nav>
+
+    <header class="tab-desk">
+        <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="content">
+        <div id="contact">
+            <h2>You can reach us at:</h2>
+            <p class="tel-link round mobile"><a href="tel:(814) 555-8989">(814) 555-8989</a></p>
+            <p class="tab-desk">(814) 555-8989</p>
+            <p>Email: <a href="mailto:contact@littlewarriorsfoundation.net" class="link">contact@littlewarriorsfoundation.net</a></p>
+            <p><a href="https://goo.gl/maps/BTJzjc2tALd4RDWA8" target="_blank" class="link">Address: 8989 Rescue Drive, Ocala, FL 34471</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:contact@littlewarriorsfoundation.net">contact@littlewarriorsfoundation.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook_logo.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter_logo.png" alt="Twitter logo">
+            </a>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
