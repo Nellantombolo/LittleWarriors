@@ -1,35 +1,59 @@
-<!DOCTYPE html>
 <!--
-  Name: Sena Corakci
-  File: get_involved.html
-  Date: 06/26/2025
+  Author: Rachel Kabwiza, Ornella Ntombolo, Sena Corakci
+  File Name: get_involved.html
+  Date: 06/27/2025 
 -->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Get Involved | Little Warriors Foundation</title>
-    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Helps search engines and social previews understand this page -->
+    <meta name="description" content="Discover how you can get involved with Little Warriors Foundation. Volunteer, host fundraisers, and support families battling childhood cancer.">
+
+    <!-- Styles and Fonts -->
+    <link rel="stylesheet" href="css/styles.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons for various platforms -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
 </head>
 <body>
-    <nav class="mobile-nav">
-        <div id="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="programs.html">Programs</a>
-            <a href="donate.html">Donate</a>
-            <a href="get_involved.html">Get Involved</a>
-            <a href="contact_us.html">Contact Us</a>
-        </div>
-        <a class="nav-icon" onclick="menu()">
-            <div id="icon">&#9776;</div>
-        </a>
-    </nav>
+    <!-- Accessibility helper -->
+    <a class="skip" href="#main-content">Skip to Main Content</a>
 
-    <header class="tab-desk">
-        <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
-        <nav>
+    <header>
+        <!-- Mobile Nav Menu -->
+        <nav class="mobile-nav">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo-mobile">
+            </a>
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="donate.html">Donate</a>
+                <a href="get_involved.html">Get Involved</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+            <!-- Burger menu icon for mobile -->
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Desktop Navigation -->
+        <nav class="tab-desk">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+            </a>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
@@ -41,34 +65,37 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
+        <!-- Big visual intro -->
         <section class="media">
             <h2>Join the Little Warriors Movement</h2>
-            <img src="images/logo_little_warriors.jpg" alt="Little Warriors Foundation - Supporting children with cancer" width="400">
+            <img src="images/logo_little_warriors.jpg" alt="Little Warriors Foundation - Supporting children with cancer">
             <p>Every image tells a story of hope. Help us change lives, one child at a time.</p>
         </section>
 
+        <!-- Volunteer roles displayed in a grid layout -->
         <section class="volunteer-grid">
-  <h2>Volunteer Opportunities</h2>
-  <div class="grid">
-    <div>
-      <img src="images/eventhelper.png" alt="Volunteering at events" width="100%">
-      <h3>Event Helper</h3>
-      <p>Support our fundraising events in your area.</p>
-    </div>
-    <div>
-      <img src="images/onlineadvocate.png" alt="Online social media volunteer" width="100%">
-      <h3>Online Advocate</h3>
-      <p>Promote our mission through social media.</p>
-    </div>
-    <div>
-      <img src="images/familysupport.png" alt="Supporting families" width="100%">
-      <h3>Family Support</h3>
-      <p>Offer emotional support and activities for kids in treatment.</p>
-    </div>
-  </div>
-</section>
+            <h2>Volunteer Opportunities</h2>
+            <div class="grid">
+                <div>
+                    <img src="images/eventhelper.png" alt="Volunteering at events">
+                    <h3>Event Helper</h3>
+                    <p>Support our fundraising events in your area.</p>
+                </div>
+                <div>
+                    <img src="images/onlineadvocate.png" alt="Online social media volunteer">
+                    <h3>Online Advocate</h3>
+                    <p>Promote our mission through social media.</p>
+                </div>
+                <div>
+                    <img src="images/familysupport.png" alt="Supporting families">
+                    <h3>Family Support</h3>
+                    <p>Offer emotional support and activities for kids in treatment.</p>
+                </div>
+            </div>
+        </section>
 
+        <!-- Bullet points for quick action items -->
         <section class="cta">
             <h2>How You Can Help</h2>
             <ul>
@@ -79,33 +106,33 @@
             </ul>
         </section>
 
+        <!-- Expandable FAQ section -->
         <section class="faq">
             <h2>FAQ</h2>
             <details>
                 <summary>Do I need experience to volunteer?</summary>
-                <p>No experience is necessary — we’ll guide you!</p>
+                <p>No experience is necessary — we'll guide you!</p>
             </details>
             <details>
                 <summary>Can I host a fundraiser in my town?</summary>
-                <p>Absolutely! Contact us and we’ll help you get started.</p>
+                <p>Absolutely! Contact us and we'll help you get started.</p>
             </details>
         </section>
     </main>
 
+    <!-- Footer section with contact and social links -->
     <footer>
         <div class="copyright">
-            <p>&copy; Copyright 2021. All Rights Reserved.</p>
-            <p><a href="mailto:contact@littlewarriorsfoundation.net">contact@littlewarriorsfoundation.net</a></p>
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:support@littlewarriorsfoundation.net">support@littlewarriorsfoundation.net</a></p>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com" target="_blank">
-                <img src="images/facebook_logo.png" alt="Facebook logo">
-            </a>
-            <a href="https://www.twitter.com" target="_blank">
-                <img src="images/twitter_logo.png" alt="Twitter logo">
-            </a>
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook_logo.png" alt="Facebook logo"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter_logo.png" alt="Twitter logo"></a>
         </div>
     </footer>
+
+    <!-- JavaScript file for nav toggling -->
     <script src="scripts/script.js"></script>
 </body>
 </html>
