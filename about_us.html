@@ -1,0 +1,115 @@
+<!--
+  Author: Rachel Kabwiza, Ornella Ntombolo, Sena Corakci
+  File Name: about_us.html
+  Date: 06/27/2025 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us | Little Warriors Foundation</title>
+
+    <!-- Page summary for search engines and link previews -->
+    <meta name="description" content="Learn more about the mission, story, and team behind Little Warriors Foundation — dedicated to supporting children with cancer.">
+
+    <!-- Styles and fonts -->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Icons for various devices -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+    <!-- Helps users with screen readers or keyboard navigation -->
+    <a class="skip" href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <!-- Mobile navigation -->
+        <nav class="mobile-nav">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo-mobile">
+            </a>
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="get_involved.html">Get Involved</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+            <!-- Hamburger icon triggers the nav menu -->
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Full navigation for tablets and desktops -->
+        <nav class="tab-desk">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Core page content -->
+    <main id="main-content">
+        <section class="mission-vision">
+            <h2>Our Mission & Vision</h2>
+            <p>At Little Warriors Foundation, we are dedicated to supporting children with cancer through emotional, medical, and financial assistance. Our vision is a world where every child fighting cancer gets the support they deserve.</p>
+        </section>
+
+        <section class="our-story">
+            <h2>Our Story</h2>
+            <img src="images/aboutus.png" alt="Children with volunteers, showing community support" class="content-image">
+            <p>Founded in 2020, Little Warriors Foundation began as a small community initiative. Today, it has grown into a nationwide network helping families navigate the challenges of childhood cancer with compassion and strength.</p>
+        </section>
+
+        <section class="our-team">
+            <h2>Meet the Team</h2>
+            <p>Our team includes doctors, volunteers, cancer survivors, and families — all united by the mission to uplift and empower children fighting cancer.</p>
+        </section>
+
+        <section class="core-values">
+            <h2>Core Values</h2>
+            <ul>
+                <li><strong>Compassion</strong> - We care deeply for every child and family.</li>
+                <li><strong>Community</strong> - Together, we are stronger.</li>
+                <li><strong>Commitment</strong> - We never stop fighting for our cause.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer with contact and social media -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:support@littlewarriorsfoundation.net">support@littlewarriorsfoundation.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook_logo.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter_logo.png" alt="Twitter logo">
+            </a>
+        </div>
+    </footer>
+
+    <!-- External JS for toggling navigation -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
