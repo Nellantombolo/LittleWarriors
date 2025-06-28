@@ -1,66 +1,86 @@
 <!DOCTYPE html>
 <!--
-Student Name: Rachel Kabwiza
-File Name: template.html
-Date: 06/25/2025
+  Student Name: Rachel Kabwiza
+  File Name: template.html
+  Date: 06/25/2025
+  Description: Template file for Little Warriors Foundation website
 -->
 <html lang="en">
-    <head>
-        <title>Little Warriors Foundation: Template</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Little Warriors Foundation: Template</title>
 
-    </head>
-    <body>
-        <!-- Mobile Nav -->  
-        <nav class="mobile-nav">
-            <div id="menu-links">
-                <a href="index.html">Home</a>
-                <a href="about_us.html">About Us</a>
-                <a href="programs.html">Programs</a>
-                <a href="get_involved.html">Get Involved</a>
-                <a href="donate.html">Donate</a>
-                <a href="contact_us.html">Contact Us</a>
-            </div>
-            <a class="menu-icon" onclick="hamburger()">
-                <div>&#9776;</div>
-            </a>
-        </nav>
-        
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.min.css" />
 
-        <nav class="tab-desk">
-            <ul>
-                <li>
-                  <a href="index.html">
-                    <img src="images/logo_little_warriors.jpg" alt="Little Warriors Logo" class="logo">
-                  </a>
-                </li>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet" />
 
-                <li><a href="index.html">Home</a></li>
-                <li><a href="lessons.html">Lessons</a></li>
-                <li><a href="instructors.html">Instructors</a></li>
-                <li><a href="rentals.html">Rentals</a></li>
-                <li><a href="donate.html">Donate</a></li> 
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        
-        <!-- Use the main area to add the main content to the webpage -->
-        <main>
-            <div></div>
-        </main>
-        <br>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png" />
+</head>
+<body>
+    <!-- Skip Link -->
+    <a class="skip" href="#main-content">Skip to Main Content</a>
 
-        <footer>
-            <p>&copy; Copyright 2021. All Rights Reserved.</p>
-            <p><a href="mailto:rkabwiza@gmail.com">support@littlewarriorsfoundation.net</a></p>
-        </footer>
-        <script src="scripts/script.js"></script>
-    </body>
-</htm>
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="Little Warriors Logo" class="logo-mobile" />
+        </a>
+        <div id="menu-links">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="programs.html">Programs</a>
+            <a href="get_involved.html">Get Involved</a>
+            <a href="donate.html">Donate</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+        <a class="menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+        </a>
+    </nav>
+
+    <!-- Desktop/Tablet Navigation -->
+    <nav class="tab-desk">
+        <a href="index.html">
+            <img src="images/logo.svg" alt="Little Warriors Logo" class="logo" />
+        </a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content">
+        <section>
+            <h2>Page Title</h2>
+            <p>This is your content area. Replace this section with your actual page content.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:support@littlewarriorsfoundation.net">support@littlewarriorsfoundation.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook_logo.png" alt="Facebook logo" /></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="images/twitter_logo.png" alt="Twitter logo" /></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
