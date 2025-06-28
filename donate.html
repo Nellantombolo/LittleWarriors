@@ -1,124 +1,147 @@
-<!DOCTYPE html>
 <!--
-Student Name: Ornella Ntombolo
-File Name: donate.html
-Date: 06/25/2025
+  Author: Rachel Kabwiza, Ornella Ntombolo, Sena Corakci
+  File Name: donate.html
+  Date: 06/27/2025 (Refactored)
 -->
+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Little Warriors Foundation: Donate</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+<head>
+    <title>Little Warriors Foundation: Donate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Helps search engines understand what this page is about -->
+    <meta name="description" content="Support the Little Warriors Foundation by donating to help children with cancer. Choose a program or give in honor of a loved one.">
 
-    </head>
-    <body>
-        <header>
-        <!-- Mobile Nav -->  
-            <nav class="mobile-nav">
-                <div id="menu-links">
-                    <a href="index.html">Home</a>
-                    <a href="about_us.html">About Us</a>
-                    <a href="programs.html">Programs</a>
-                    <a href="get_involved.html">Get Involved</a>
-                    <a href="donate.html">Donate</a>
-                    <a href="contact_us.html">Contact Us</a>
-                </div>
-                <a class="menu-icon" onclick="hamburger()">
-                    <div>&#9776;</div>
-                </a>
-            </nav>
+    <!-- External stylesheet and fonts -->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicons for various platforms -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+
+<body>
+    <!-- Skip link improves accessibility -->
+    <a class="skip" href="#main-content">Skip to Main Content</a>
+
+    <!-- Header includes mobile and desktop navs -->
+    <header>
+        <!-- Mobile Navigation Menu -->
+        <nav class="mobile-nav">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo-mobile">
+            </a>
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="get_involved.html">Get Involved</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+            <!-- Hamburger icon toggles mobile nav -->
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Desktop Navigation -->
+        <nav class="tab-desk">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content starts here -->
+    <main id="main-content">
+        <section>
+            <h2>Make a Difference Today!</h2>
+            <img src="images/hands_donation.jpeg" alt="Hands exchanging a donation, symbolizing community support" class="content-image">
+            <p>Your contribution, no matter the size, helps us provide critical support to children battling cancer and their families.</p>
             
-
-            <nav class="tab-desk">
-                <ul>
-                    <li>
-                    <a href="index.html">
-                        <img src="images/logo_little_warriors.jpg" alt="Little Warriors Logo" class="logo">
-                    </a>
-                    </li>
-
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="lessons.html">About Us</a></li>
-                    <li><a href="instructors.html">Programs</a></li>
-                    <li><a href="rentals.html">Get Involved</a></li>
-                    <li><a href="donate.html">Donate</a></li> 
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Use the main area to add the main content to the webpage -->
-        <main>
-            <img src="images/donate.jpeg" alt="Donate banner" class="round">
-            <div>
-              <form id="donation-form">
+            <!-- Donation Form -->
+            <form id="donation-form">
                 <fieldset>
                     <legend>Donation Info</legend>
 
-                    <label for="amount">Donation Amount</label>
-                    <input type="number" id= "amount" name="amount" placeholder="Amount">
+                    <label for="amount">Donation Amount ($)</label>
+                    <input type="number" id="amount" name="amount" placeholder="e.g., 50" min="5" step="1" required>
 
                     <p>Frequency:</p>
                     <label for="once">One-time</label>
-                    <input type="radio" id="once" name="freq" value="once">
+                    <input type="radio" id="once" name="freq" value="once" checked>
 
                     <label for="monthly">Monthly</label>
                     <input type="radio" id="monthly" name="freq" value="monthly">
 
-                    <label for="program">Select a Program</label>
+                    <label for="program">Select a Program (Optional)</label>
                     <select name="program" id="program">
-                        <option>Sponsor a Child</option>
-                        <option>Support a Visit</option>
+                        <option value="">-- Select --</option>
+                        <option value="sponsor">Sponsor a Child</option>
+                        <option value="visit">Support a Visit</option>
+                        <option value="emergency">Emergency Fund</option>
+                        <option value="tutoring">Educational Tutoring</option>
+                        <option value="carepackage">Care Package Delivery</option>
                     </select>
                 </fieldset>
-          
+
                 <fieldset>
-                    <legend>Your Informations</legend>
-                    
+                    <legend>Your Information</legend>
+
                     <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="First Name">
+                    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
 
                     <label for="lastname">Last Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
 
                     <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                    <input type="tel" id="phone" name="phone" placeholder="e.g., (123) 456-7890" pattern="^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$" title="Phone number must be in the format (123) 456-7890 or 123-456-7890" required>
+                    
+                    <label for="street">Billing Street Address</label>
+                    <input type="text" id="street" name="street" placeholder="123 Main St" required>
 
-                    <label for="message">Leave a Message</label>
-                    <textarea id="message" name="message" placeholder="Leave a message"></textarea>
+                    <label for="message">Leave a Message (Optional)</label>
+                    <textarea id="message" name="message" placeholder="Feel free to leave a message..."></textarea>
                 </fieldset>
-                
+
                 <button type="submit">Donate Now</button>
-                
-              </form>
-            </div>
-        </main>
-        <br>
+            </form>
+        </section>
+    </main>
 
-        <footer>
-            <div class="copyright">
-              <p>&copy; Copyright 2021. All Rights Reserved.</p>
-              <p><a href="mailto:contact@littlewarriors.net">contact@littlewarriorsfoundation.net</a></p>
-          </div> 
-          <div class="social">
-              <a href="https://www.facebook.com" target="_blank">
-                  <img src="images/facebook_logo.png" alt="Facebook logo">
-              </a>
-              <a href="https://www.twitter.com" target="_blank">
-                  <img src="images/twitter_logo.png" alt="Twitter logo">
-              </a>
-          </div> 
-        </footer>
-        <script src="scripts/script.js"></script>
-    </body>
-</htm>
+    <!-- Site footer with contact info and socials -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:support@littlewarriorsfoundation.net">support@littlewarriorsfoundation.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook_logo.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter_logo.png" alt="Twitter logo">
+            </a>
+        </div>
+    </footer>
 
+    <!-- JavaScript for menu toggling -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
