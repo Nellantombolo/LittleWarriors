@@ -1,71 +1,85 @@
-<!DOCTYPE html>
 <!--
-Student Name: Ornella Ntombolo
-File Name: programs.html
-Date: 06/25/2025
+  Author: Rachel Kabwiza, Ornella Ntombolo, Sena Corakci
+  File Name: programs.html
+  Date: 06/27/2025 (Refactored)
 -->
+
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Little Warriors Foundation: Programs</title>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-        <link rel="shortcut icon" href="images/favicon.ico">
-        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+<head>
+    <title>Little Warriors Foundation: Programs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    </head>
-    <body>
-        <header>
-            <!-- Mobile Nav -->  
-            <nav class="mobile-nav">
-                <div id="menu-links">
-                    <a href="index.html">Home</a>
-                    <a href="about_us.html">About Us</a>
-                    <a href="programs.html">Programs</a>
-                    <a href="get_involved.html">Get Involved</a>
-                    <a href="donate.html">Donate</a>
-                    <a href="contact_us.html">Contact Us</a>
-                </div>
-                <a class="menu-icon" onclick="hamburger()">
-                    <div>&#9776;</div>
-                </a>
-            </nav>
-            
+    <!-- Description helps with SEO and previews -->
+    <meta name="description" content="Explore the core programs offered by Little Warriors Foundation to support children with cancer and their families.">
 
-            <nav class="tab-desk">
-                <ul>
-                    <li>
-                    <a href="index.html">
-                        <img src="images/logo_little_warriors.jpg" alt="Little Warriors Logo" class="logo">
-                    </a>
-                    </li>
+    <!-- External styles and fonts -->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="lessons.html">About Us</a></li>
-                    <li><a href="instructors.html">Programs</a></li>
-                    <li><a href="rentals.html">Get Involved</a></li>
-                    <li><a href="donate.html">Donate</a></li> 
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <!-- Use the main area to add the main content to the webpage -->
-        <main>
-            <div>
-                <h2>Our Programs</h2>
-                <img src="images/programs.jpeg" alt="Description of the program image" class="round">
-                <p>
-                At Little Warriors Foundation, we are committed to standing beside children with cancer and their families through every step of their journey. Our programs are carefully designed to provide emotional support, financial relief, and educational assistance. Whether it's a comforting hospital visit, a much-needed care package, or help with tutoring during treatment, our goal is to bring light and stability during a difficult time. Below is an overview of the core programs we offer and how they make an impact.
-                </p>
+    <!-- Icons for browsers and devices -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
+<body>
+    <!-- Improves accessibility for keyboard users -->
+    <a class="skip" href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo-mobile">
+            </a>
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="get_involved.html">Get Involved</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact_us.html">Contact Us</a>
             </div>
+            <!-- Hamburger menu icon for small screens -->
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
 
-            <div id="program-table>
-                <button id="toggle-table">Programs</button>
+        <!-- Tablet and Desktop Navigation -->
+        <nav class="tab-desk">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content starts here -->
+    <main id="main-content">
+        <section>
+            <h2>Our Programs</h2>
+            <img src="images/child_reading_with_volunteer.jpeg" alt="Child reading with a volunteer, depicting educational support" class="content-image">
+            <p>
+                At Little Warriors Foundation, we are committed to standing beside children with cancer and their families through every step of their journey. Our programs are carefully designed to provide emotional support, financial relief, and educational assistance. Whether it's a comforting hospital visit, a much-needed care package, or help with tutoring during treatment, our goal is to bring light and stability during a difficult time. Below is an overview of the core programs we offer and how they make an impact.
+            </p>
+        </section>
+
+        <!-- Table can be toggled with a button -->
+        <section id="program-table-section">
+            <button id="toggle-table">Toggle Programs Table</button>
+            <div id="program-table">
                 <table>
+                    <caption>Little Warriors Foundation Programs</caption>
                     <thead>
                         <tr>
                             <th>Program Name</th>
@@ -73,58 +87,55 @@ Date: 06/25/2025
                             <th>Duration</th>
                         </tr>
                     </thead>
-    
                     <tbody>
                         <tr>
                             <td>Hospital Visits</td>
                             <td>Volunteers bring comfort kits, books, and companionship to kids in treatment</td>
                             <td>Weekly</td>
                         </tr>
-                      
                         <tr>
                             <td>Emergency Fund</td>
                             <td>Helps families pay for travel, medication, or lodging during care</td>
                             <td>Case-by-case</td>
                         </tr>
-                      
                         <tr>
                             <td>Online Support Groups</td>
                             <td>Virtual meetups for parents or kids to share and connect</td>
                             <td>Bi-weekly</td>
                         </tr>
-                      
                         <tr>
                             <td>Educational Tutoring</td>
                             <td>Helps kids keep up with schoolwork through virtual or in-person tutoring</td>
                             <td>As scheduled</td>
                         </tr>
-                      
                         <tr>
                             <td>Care Package Delivery</td>
                             <td>Sends personalized boxes with toys, hygiene items, and notes of encouragement</td>
                             <td>Monthly</td>
                         </tr>
-                      
                     </tbody>
                 </table>
             </div>
-        </main>
-        <br>
+        </section>
+    </main>
 
-        <footer>
-            <div class="copyright">
-              <p>&copy; Copyright 2021. All Rights Reserved.</p>
-              <p><a href="mailto:contact@littlewarriors.net">contact@littlewarriorsfoundation.net</a></p>
-            </div> 
-            <div class="social">
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="images/facebook_logo.png" alt="Facebook logo">
-                </a>
-                <a href="https://www.twitter.com" target="_blank">
-                    <img src="images/twitter_logo.png" alt="Twitter logo">
-                </a>
-            </div> 
-        </footer>
-        <script src="scripts/script.js"></script>
-    </body>
-</htm>
+    <!-- Footer with contact info and social links -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:support@littlewarriorsfoundation.net">support@littlewarriorsfoundation.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook_logo.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter_logo.png" alt="Twitter logo">
+            </a>
+        </div>
+    </footer>
+
+    <!-- Site scripts -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
