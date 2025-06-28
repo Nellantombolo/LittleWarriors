@@ -1,5 +1,5 @@
 /*
-Author: Ornella Ntombolo, Sena Corakci (Consolidated and Refactored by Gemini AI)
+Author: Ornella Ntombolo, Sena Corakci
 File Name: script.js
 Date: 06/27/2025 
 */
