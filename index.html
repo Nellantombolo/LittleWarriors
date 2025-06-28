@@ -1,102 +1,132 @@
+<!--
+  Author: Rachel Kabwiza, Ornella Ntombolo, Sena Corakci
+  File Name: index.html
+  Date: 06/27/2025 (Refactored)
+-->
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<head>
+    <title>Little Warriors Foundation: Home</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Little Warriors Foundation</title>
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Fonts from Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Header with Logo & Nav -->
-    <nav class="mobile-nav">
-      <div id="nav-links">
-          <a href="index.html">Home</a>
-          <a href="about_us.html">About Us</a>
-          <a href="programs.html">Programs</a>
-          <a href="donate.html">Donate</a>
-          <a href="get_involved.html">Get Involved</a>
-          <a href="contact_us.html">Contact Us</a>
-      </div>
-      <a class="nav-icon" onclick="hamburger()">
-          <div id="icon">&#9776;</div>
-      </a>
-    </nav>
-  
-      <header>
-      <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about_us.html">About Us</a></li>
-            <li><a href="programs.html">Programs</a></li>
-            <li><a href="donate.html">Donate</a></li>
-            <li><a href="get_involved.html">Get Involved</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-          </ul>
-      </nav>
-    </header>
+    <!-- Meta description helps improve SEO -->
+    <meta name="description" content="Support children battling cancer with Little Warriors Foundation. Discover our mission, programs, and how you can make a difference in families' lives.">
     
-    <!-- Video Banner (Placeholder) -->
-  <!-- Replace your entire video/banner section with this: -->
-  
-  <main id="content">
-    <div id="info">
-        <h2>Who Are We ?</h2>
-        <p>We're a compassionate community dedicated to supporting children battling cancer and their families. Through emotional support programs, hospital partnerships, and family resources, we bring moments of joy and hope to brave young warriors during their treatment journey.</p>
-        <p>Little Warriors Foundation is a member of the <a href="https://donate.cancer.org/" target="_blank" class="link">American Cancer Society.</a></p>
-        
-        
-        <p>Watch the video below to learn about us.</p>
-        <video controls poster="images/poster_video.jpg">
-            <source src="media/home_page_video.mp4" type="video/mp4">
-            <p>Your browser does not support the audio element.</p>
-        </video>
+    <!-- Stylesheet and fonts -->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicons for different devices -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+</head>
 
-    <section class="video-hero">
-      <div class="video-content">
-        <h1>Standing Strong with Kids Fighting Cancer</h1>
-        <p>Every child deserves hope, joy, and the best chance to heal.</p>
-      </div>
-    </section>  <!-- Feature Blocks -->
-      <section class="features">
-        <div class="feature-block">
-          <div class="feature-icon">❤️</div>
-          <h3>Our Programs</h3>
-          <p>Camp Sunshine, Hospital Packs, and more. Learn how we bring joy to kids in treatment.</p>
-          <a href="index.html" class="link">Explore →</a>
-        </div>
-      
-      <div class="feature-block">
-        <div class="feature-icon">👐</div>
-        <h3>Volunteer</h3>
-        <p>Give your time and talent to brighten a child's day. No experience needed!</p>
-        <a href="get_involved.html" class="link">Join Us →</a>
-      </div>
-      
-      <div class="feature-block">
-        <div class="feature-icon">✨</div>
-        <h3>Our Story</h3>
-        <p>Read how Little Warriors helped families like Mia's through their toughest battles.</p>
-        <a href="about_us.html" class="link">Read More →</a>
-      </div>
-    </section>
+<body>
+    <!-- Skip link for screen readers -->
+    <a class="skip" href="#main-content">Skip to Main Content</a>
+
+    <!-- Site Header -->
+    <header>
+        <!-- Mobile Navigation -->
+        <nav class="mobile-nav">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo-mobile">
+            </a>
+            <div id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="programs.html">Programs</a>
+                <a href="get_involved.html">Get Involved</a>
+                <a href="donate.html">Donate</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+            <!-- Hamburger menu icon -->
+            <a class="nav-icon" onclick="menu()">
+                <div id="icon">&#9776;</div>
+            </a>
+        </nav>
+
+        <!-- Desktop Navigation -->
+        <nav class="tab-desk">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="Little Warriors Logo" class="logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="get_involved.html">Get Involved</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main id="main-content">
+        <!-- Video Hero Section -->
+        <section class="hero-section">
+            <video controls class="hero-video-bg" poster="images/hero_poster.jpg">
+                <source src="media/hero_video.mp4" type="video/mp4">
+                <source src="media/hero_video.WebM" type="video/WebM">
+                <p>Your browser does not support the video tag.</p>
+            </video>
+            <div class="hero-content">
+                <h1>Little Warriors Foundation</h1>
+                <p>Supporting children with cancer and their families every step of the way.</p>
+            </div>
+        </section>
+
+        <!-- Impact Image Section -->
+        <section class="impact-image-section">
+            <h2>Our Impact in Action</h2>
+            <img src="images/child_smiling_with_volunteer.jpg" alt="Child smiling with a volunteer" class="content-image">
+            <p>See how your support directly translates into moments of joy and comfort for the children and families we serve.</p>
+        </section>
+
+        <!-- Feature Highlights -->
+        <section class="features">
+            <div class="feature-block">
+                <span class="feature-icon">&#128150;</span>
+                <h3>Our Mission</h3>
+                <p>Dedicated to providing emotional, medical, and financial assistance to children battling cancer.</p>
+                <p><a href="about_us.html" class="link">Learn More</a></p>
+            </div>
+            <div class="feature-block">
+                <span class="feature-icon">&#127873;</span>
+                <h3>Our Programs</h3>
+                <p>From hospital visits to educational support, we offer programs designed to make a real difference.</p>
+                <p><a href="programs.html" class="link">See Programs</a></p>
+            </div>
+            <div class="feature-block">
+                <span class="feature-icon">&#128176;</span>
+                <h3>Donate Today</h3>
+                <p>Your generosity helps us continue our vital work and bring hope to families.</p>
+                <p><a href="donate.html" class="link">Support Our Cause</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Area -->
     <footer>
-      <div class="copyright">
-          <p>&copy; Copyright 2021. All Rights Reserved.</p>
-          <p><a href="mailto:contact@littlewarriors.net">contact@littlewarriorsfoundation.net</a></p>
-      </div> 
-      <div class="social">
-          <a href="https://www.facebook.com" target="_blank">
-              <img src="images/facebook_logo.png" alt="Facebook logo">
-          </a>
-          <a href="https://www.twitter.com" target="_blank">
-              <img src="images/twitter_logo.png" alt="Twitter logo">
-          </a>
-      </div> 
-   </footer>
-   <script src="scripts/script.js"></script>
-  </body>
+        <div class="copyright">
+            <p>&copy; Copyright 2025. All Rights Reserved.</p>
+            <p><a href="mailto:support@littlewarriorsfoundation.net">support@littlewarriorsfoundation.net</a></p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="images/facebook_logo.png" alt="Facebook logo">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="images/twitter_logo.png" alt="Twitter logo">
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript file for menu toggle -->
+    <script src="scripts/script.js"></script>
+</body>
 </html>
